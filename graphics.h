@@ -1,7 +1,6 @@
 #include <termios.h>
 #include <sys/time.h>
 #include <linux/fb.h>
-//#include "iso_font.h"
 
 typedef unsigned short color_t;
 struct fb_fix_screeninfo fix; //bit depth
@@ -22,5 +21,4 @@ void draw_rect(int x1, int y1, int width, int height, color_t c);
 void draw_text(int x, int y, const char *text, color_t c);
 void draw_circle(int x, int y, int r, color_t c);
 void draw_char(int x, int y, const char *text, color_t c);
-//
 color_t encode(int red, int green, int blue);
